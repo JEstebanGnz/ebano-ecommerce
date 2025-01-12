@@ -10,7 +10,7 @@ export const PageTitle = ({title, subtitle, className}: Props) => {
 
     return (
 
-        <div className={ `${className}`}>
+        <div className={ `${className} mb-10` }>
         
         <h1 className={`${titleFont.className} font-semibold text-4xl py-4`}> 
             {title}

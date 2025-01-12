@@ -1,20 +1,38 @@
+import { PageTitle } from "@/components";
+import { ProductGrid } from "@/components/products/product-grid/ProductGrid";
+import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation"
 
 interface Props {
-    params:{
+    params: {
         id: string
     }
 }
 
-export default function Page({params}: Props){
 
-    const {id} = params;
 
-    if ( id === 'services'){
-        notFound();
-    }
+export default function Page({ params }: Props) {
+
+    const { id } = params;
+
+    const products = initialData.products.filter((product) => product.type === id);
+
+    // if (id === 'services') {
+    //     notFound();
+    // }
+
+
 
     return (
-        <div className="ml-2 mx-1"> {id}</div>
+
+        <>
+
+            <PageTitle title={`${id}`} subtitle="Hechos con mucho amor"/> 
+
+            <ProductGrid products={products}/>
+
+        </>
+
+
     )
 }

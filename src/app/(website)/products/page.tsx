@@ -1,7 +1,16 @@
-export default function(){
+import { PageTitle } from "@/components"
+import { ProductGrid } from "@/components/products/product-grid/ProductGrid"
+import { initialData } from "@/seed/seed"
+
+export default function () {
+
+    const products = initialData.products
+
     return (
-
-        <div className="ml-2 mx-1"> Página de productos</div>
-
+        <>
+            <PageTitle title="Todos los productos" subtitle= "Hechos con mucho amor"/>
+            <ProductGrid products={products}
+            />
+        </>
     )
 }
