@@ -90,90 +90,6 @@ export const initialData: SeedData = {
             title: "Chocolate Negro Crujiente con Café"
         },
         {
-            description: "Suave chocolate con leche relleno de una cremosa pasta de lúcuma. Esta fruta tradicional peruana añade un dulzor natural y notas similares al maple a nuestro chocolate con leche 45% cacao.",
-            images: [
-                'lucuma_chocolate_01.jpg',
-                'lucuma_chocolate_02.jpg',
-            ],
-            inStock: 22,
-            price: 16,
-            sizes: ['100g','200g'],
-            slug: "chocolate_leche_lucuma",
-            type: 'artisanal_chocolate',
-            tags: ['chocolate con leche', 'lúcuma'],
-            title: "Barra de Chocolate con Leche Rellena de Lúcuma"
-        },
-        {
-            description: "Una sofisticada barra de chocolate negro con trozos de jengibre cristalizado y un toque de ají amazónico. El equilibrio perfecto entre picante y dulce en una base de cacao al 65%.",
-            images: [
-                'ginger_chili_chocolate_01.jpg',
-                'ginger_chili_chocolate_02.jpg',
-            ],
-            inStock: 12,
-            price: 15,
-            sizes: ['50g','100g'],
-            slug: "chocolate_negro_jengibre_aji",
-            type: 'artisanal_chocolate',
-            tags: ['chocolate negro', 'picante'],
-            title: "Chocolate Negro con Jengibre y Ají"
-        },
-        {
-            description: "Delicada corteza de chocolate elaborada con chocolate negro 60% y cubierta con una mezcla de nueces nativas incluyendo nueces de Brasil, anacardos y pecanas. Cada pieza es única y artesanal.",
-            images: [
-                'nut_bark_01.jpg',
-                'nut_bark_02.jpg',
-            ],
-            inStock: 25,
-            price: 20,
-            sizes: ['200g','500g'],
-            slug: "corteza_chocolate_nueces_amazonicas",
-            type: 'artisanal_chocolate',
-            tags: ['chocolate negro', 'nueces'],
-            title: "Corteza de Chocolate con Nueces Amazónicas"
-        },
-        {
-            description: "Una selección de nuestros mejores bombones de chocolate rellenos con ganache de frutas nativas incluyendo maracuyá, mango y guanábana. Cada pieza está pintada a mano con colores naturales de manteca de cacao.",
-            images: [
-                'tropical_bonbons_01.jpg',
-                'tropical_bonbons_02.jpg',
-            ],
-            inStock: 15,
-            price: 24,
-            sizes: ['100g','200g'],
-            slug: "coleccion_bombones_frutas_tropicales",
-            type: 'artisanal_chocolate',
-            tags: ['bombones', 'frutas tropicales'],
-            title: "Colección de Bombones de Frutas Tropicales"
-        },
-        {
-            description: "Discos de chocolate caliente elaborados con chocolate negro 70% y especiados con canela y vainilla. Simplemente revuelva en leche caliente para una experiencia tradicional de chocolate caliente peruano.",
-            images: [
-                'hot_chocolate_01.jpg',
-                'hot_chocolate_02.jpg',
-            ],
-            inStock: 30,
-            price: 17,
-            sizes: ['100g','200g'],
-            slug: "discos_chocolate_caliente_especiado",
-            type: 'artisanal_chocolate',
-            tags: ['chocolate caliente', 'especiado'],
-            title: "Discos de Chocolate Caliente Especiado"
-        },
-        {
-            description: "Chips crujientes de nueces de Brasil ligeramente sazonadas con sal rosa amazónica. Estas chips ricas en proteínas están hechas con nueces cosechadas de manera sostenible y son perfectas para un snack saludable.",
-            images: [
-                'brazil_nut_chips_01.jpg',
-                'brazil_nut_chips_02.jpg',
-            ],
-            inStock: 40,
-            price: 8,
-            sizes: ['50g','100g'],
-            slug: "chips_nueces_brasil",
-            type: 'amazonian_snacks',
-            tags: ['nueces', 'chips'],
-            title: "Chips de Nueces de Brasil"
-        },
-        {
             description: "Aguaymanto deshidratado y masticable, conocido por su alto contenido en vitamina C y sabor ácido. Estas bayas naturalmente dulces son perfectas para picar o añadir a mezclas de frutos secos.",
             images: [
                 'golden_berries_01.jpg',
@@ -200,20 +116,6 @@ export const initialData: SeedData = {
             type: 'amazonian_snacks',
             tags: ['frutos secos', 'nueces'],
             title: "Mezcla de Frutos Secos Amazónicos"
-        },
-        {
-            description: "Chips crujientes hechas de plátano verde orgánico y sazonadas con ajo silvestre y hierbas. Una alternativa saludable a las papas fritas tradicionales.",
-            images: [
-                'plantain_chips_01.jpg',
-                'plantain_chips_02.jpg',
-            ],
-            inStock: 45,
-            price: 6,
-            sizes: ['50g','100g'],
-            slug: "chips_platano_hierbas",
-            type: 'amazonian_snacks',
-            tags: ['chips', 'plátano'],
-            title: "Chips de Plátano con Hierbas"
         },
         {
             description: "Bayas de camu camu deshidratadas, dulces y ácidas, conocidas por su excepcionalmente alto contenido en vitamina C. Estas bayas ricas en antioxidantes tienen un perfil de sabor único.",
@@ -243,61 +145,5 @@ export const initialData: SeedData = {
             tags: ['chips', 'picante'],
             title: "Chips de Yuca Picante"
         },
-        {
-            description: "Un único cuero de fruta hecho de bayas de açaí y plátano. Este snack masticable es rico en antioxidantes y proporciona un impulso de energía natural.",
-            images: [
-                'acai_fruit_leather_01.jpg',
-                'acai_fruit_leather_02.jpg',
-            ],
-            inStock: 28,
-            price: 9,
-            sizes: ['50g','100g'],
-            slug: "cuero_fruta_acai",
-            type: 'amazonian_snacks',
-            tags: ['cuero de fruta', 'açaí'],
-            title: "Cuero de Fruta de Açaí"
-        },
-        {
-            description: "Semillas de sacha inchi tostadas y sazonadas, también conocidas como maní inca. Estas semillas ricas en proteínas están llenas de omega-3 y tienen una textura crujiente y sabor a nuez.",
-            images: [
-                'sacha_inchi_01.jpg',
-                'sacha_inchi_02.jpg',
-            ],
-            inStock: 40,
-            price: 11,
-            sizes: ['100g','200g'],
-            slug: "semillas_sacha_inchi_tostadas",
-            type: 'amazonian_snacks',
-            tags: ['semillas', 'proteína'],
-            title: "Semillas de Sacha Inchi Tostadas"
-        },
-        {
-            description: "Una mezcla única de granola con ingredientes amazónicos nativos que incluye nueces de Brasil, aguaymanto y chips de coco, endulzada con miel natural de la selva.",
-            images: [
-                'rainforest_granola_01.jpg',
-                'rainforest_granola_02.jpg',
-            ],
-            inStock: 35,
-            price: 13,
-            sizes: ['200g','500g'],
-            slug: "mezcla_granola_selva",
-            type: 'amazonian_snacks',
-            tags: ['granola', 'desayuno'],
-            title: "Mezcla de Granola de la Selva"
-        },
-        {
-            description: "Chips crujientes hechas de cocona, esta única fruta amazónica. Estas chips exóticas ofrecen un sabor equilibrado entre dulce y ácido, y son ricas en compuestos naturales.",
-            images: [
-                'cocona_chips_01.jpg',
-                'cocona_chips_02.jpg',
-            ],
-            inStock: 25,
-            price: 8,
-            sizes: ['50g','100g'],
-            slug: "chips_fruta_cocona",
-            type: 'amazonian_snacks',
-            tags: ['chips', 'fruta exótica'],
-            title: "Chips de Cocona"
-        }
     ]
 }

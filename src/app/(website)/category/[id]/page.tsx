@@ -9,8 +9,6 @@ interface Props {
     }
 }
 
-
-
 export default function Page({ params }: Props) {
 
     const { id } = params;
@@ -21,18 +19,10 @@ export default function Page({ params }: Props) {
     //     notFound();
     // }
 
-
-
     return (
-
         <>
-
             <PageTitle title={`${id}`} subtitle="Hechos con mucho amor"/> 
-
             <ProductGrid products={products}/>
-
         </>
-
-
     )
 }

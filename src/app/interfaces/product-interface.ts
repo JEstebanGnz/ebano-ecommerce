@@ -3,13 +3,13 @@ export interface Product {
     images: string[];
     inStock: number;
     price: number;
-    sizes: ValidSizes[];
+    sizes: Size[];
     slug: string;
     tags: string[];
     title: string;
-    type: ValidTypes;
+    type: Type;
 }
 
-export type ValidSizes = '50g'|'100g'|'200g'|'500g';
-export type ValidTypes = 'artisanal_chocolate'|'amazonian_snacks';
+export type Size = '50g'|'100g'|'200g'|'500g';
+export type Type = 'artisanal_chocolate'|'amazonian_snacks';
 

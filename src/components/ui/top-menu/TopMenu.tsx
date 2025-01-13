@@ -24,30 +24,30 @@ export const TopMenu = () => {
       </div>
 
       {/* Botones de la mitad de la pantalla*/}
-
-      <div className="hidden sm:block mt-4">
+      <div className="hidden sm:block">
         <Link href="/hosting" className="p-2 m-2 hover:bg-slate-200 rounded-md transition-all">Hospedaje</Link>
         <Link href="/services" className="p-2 m-2 hover:bg-slate-200 rounded-md transition-all">Servicios</Link>
-
+        
         {/* Products button with hover dropdown */}
         <div className="relative inline-block group">
           <Link href="/products"
-            className="p-2 m-2 hover:bg-slate-200 rounded-md transition-all cursor-pointer"
+            className="p-2 m-2 hover:bg-slate-200 rounded-md transition-all cursor-pointer inline-block"
           >
             Productos
           </Link>
-
+          {/* Invisible bridge to maintain hover */}
+          <div className="absolute h-4 w-full left-0 bottom-0 translate-y-3"></div>
           {/* Dropdown menu */}
-          <div className="absolute left-0 bg-white shadow-lg rounded-md mt-1 p-2 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+          <div className="hidden group-hover:block absolute left-0 bg-white shadow-lg rounded-md p-2 z-10 min-w-[200px] translate-y-3">
             <Link
               href="/category/amazonian_snacks"
-              className="block p-2 hover:bg-slate-200 rounded-md transition-all"
+              className="block p-2 hover:bg-slate-200 rounded-md transition-all whitespace-nowrap"
             >
               Snacks
             </Link>
             <Link
               href="/category/artisanal_chocolate"
-              className="block p-2 hover:bg-slate-200 rounded-md transition-all"
+              className="block p-2 hover:bg-slate-200 rounded-md transition-all whitespace-nowrap"
             >
               Chocolate Artesanal
             </Link>
