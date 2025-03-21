@@ -2,7 +2,6 @@ import { Type } from "@/app/interfaces";
 import { PageTitle } from "@/components";
 import { ProductGrid } from "@/components/products/product-grid/ProductGrid";
 import { initialData } from "@/seed/seed";
-import { notFound } from "next/navigation"
 
 interface Props {
     params: Promise<{

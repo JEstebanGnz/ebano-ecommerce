@@ -1,8 +1,7 @@
-import { PageTitle } from "@/components";
 import HeroSection from "@/components/HeroSection";
 import Testimonials from "@/components/Testimonials";
 
-export default function(){
+export default function HomePage(){
     return (
         <main>
       <HeroSection />

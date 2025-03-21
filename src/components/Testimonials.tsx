@@ -41,7 +41,7 @@ export default function Testimonials() {
                                     {[...Array(5)].map((_, i) => <IoStar key={i} />)}
                                 </div>
                                 <p className="text-gray-800 italic text-lg leading-relaxed font-medium">
-                                    "{testimonio.comentario}"
+                                &quot;{testimonio.comentario}&quot;
                                 </p>
                                 <h4 className="mt-2 text-xl font-bold text-gray-900">{testimonio.nombre}</h4>
                                 <span className="text-gray-500 text-sm">Google</span>

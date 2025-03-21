@@ -10,7 +10,6 @@ export const Sidebar = () => {
 
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen)
   const closeSideMenu = useUIStore((state) => state.closeSideMenu)
-  const openSideMenu = useUIStore((state) => state.openSideMenu)
 
   return (
 

@@ -1,13 +1,9 @@
 "use client";
 
-import { Size } from "@/app/interfaces";
-import clsx from "clsx";
 import React, { useState } from "react";
 import { IoAddCircleOutline, IoRemoveCircleOutline } from "react-icons/io5";
 
-interface Props {}
-
-export const QuantitySelector = ({}: Props) => {
+export const QuantitySelector = () => {
   const [quantity, setQuantity] = useState(1);
 
   function onQuantityChanged(value: number) {
@@ -24,8 +20,7 @@ export const QuantitySelector = ({}: Props) => {
         </button>
 
         <span className="w-20 mx-3 px-3 bg-green-200 text-center rounded">
-          {" "}
-          {quantity}{" "}
+          {quantity}
         </span>
 
         <button onClick={() => onQuantityChanged(+1)}>

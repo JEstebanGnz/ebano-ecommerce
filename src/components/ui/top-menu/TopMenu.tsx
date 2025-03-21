@@ -1,14 +1,12 @@
 "use client";
 
-import { useUIStore } from "@/store";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React from "react";
 import { IoLogoFacebook, IoLogoInstagram, IoLogoWhatsapp } from "react-icons/io5";
 
 export const TopMenu = () => {
-  const openSideMenu = useUIStore((state) => state.openSideMenu);
-  const [isDropdownOpen, setDropdownShow] = useState(false);
+
 
   return (
     <nav className="fixed top-0 w-full bg-[var(--primary)] text-white shadow-md z-50 flex items-center justify-between px-6 py-3">

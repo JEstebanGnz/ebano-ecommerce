@@ -1,7 +1,5 @@
 import { NotFound } from "@/components";
 
-export default function () {
-  return (
-      <NotFound />
-  );
+export default function NotFoundPage() {
+  return <NotFound />;
 }

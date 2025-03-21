@@ -2,7 +2,7 @@ import { PageTitle } from "@/components"
 import { ProductGrid } from "@/components/products/product-grid/ProductGrid"
 import { initialData } from "@/seed/seed"
 
-export default function () {
+export default function ProductsPage() {
 
     const products = initialData.products
 
