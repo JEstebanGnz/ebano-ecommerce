@@ -3,28 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --primary: #274494;
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary: #3B6D39; /* Verde bosque */
+  --secondary: #A67C52; /* Marrón cálido */
+  --accent: #FFD700; /* Dorado suave */
+  --background: #F5F5F5; /* Fondo claro */
+  --text: #333333; /* Texto gris oscuro */
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */ 
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-start-rgb))
-      )
-      rgb(var(--background-end-rgb))
+  color: var(--text);
+  background-color: var(--background);
 }
 
 
@@ -51,9 +39,9 @@ body {
 
 
 .btn-primary {
-  @apply bg-blue-600 hover:bg-blue-800 text-white py-2 px-4 rounded transition-all;
+  @apply bg-[var(--primary)] hover:bg-green-800 text-white py-2 px-4 rounded transition-all;
 }
 
 .btn-secondary {
-  @apply bg-gray-200 hover:bg-gray-300 text-black py-2 px-4 rounded transition-all;
+  @apply bg-[var(--secondary)] hover:bg-[#8C6239] text-white py-2 px-4 rounded transition-all;
 }

@@ -1,10 +1,12 @@
 import { PageTitle } from "@/components";
+import HeroSection from "@/components/HeroSection";
+import Testimonials from "@/components/Testimonials";
 
 export default function(){
     return (
-        <PageTitle 
-        title = 'Bienvenido a Ébano' 
-        subtitle="Una experiencia natural y cautivadora" 
-        className="ml-2 mx-1"/>
+        <main>
+      <HeroSection />
+      <Testimonials />
+    </main>
     )
 }

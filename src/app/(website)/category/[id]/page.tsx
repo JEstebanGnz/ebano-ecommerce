@@ -5,14 +5,14 @@ import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation"
 
 interface Props {
-    params: {
-        id: Type
-    }
+    params: Promise<{
+        id: Type 
+    }>
 }
 
-export default function Page({ params }: Props) {
+export default async function Page({ params }: Props) {
 
-    const { id } = params;
+    const { id } = await params;
 
     const products = initialData.products.filter((product) => product.type === id);
 
@@ -28,8 +28,8 @@ export default function Page({ params }: Props) {
 
     return (
         <>
-            <PageTitle title={`Productos de ${labels[id]}`} subtitle="Hechos con mucho amor"/> 
-            <ProductGrid products={products}/>
+            <PageTitle title={`Productos de ${labels[id]}`} subtitle="Hechos con mucho amor" />
+            <ProductGrid products={products} />
         </>
     )
 }

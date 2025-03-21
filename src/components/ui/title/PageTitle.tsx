@@ -24,7 +24,7 @@ export const PageTitle = ({title, subtitle, className}: Props) => {
             )
         }
 
-
+        Lema y testimonios
 
         </div>
 

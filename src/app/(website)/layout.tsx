@@ -1,5 +1,4 @@
 import { Sidebar, TopMenu } from "@/components";
-import { useUIStore } from "@/store";
 
 export default function WebsiteLayout({
  children
@@ -8,11 +7,11 @@ export default function WebsiteLayout({
 }) {
 
   return (
-    <main className="min-h-screen bg-green-100">
+    <main className="min-h-screen bg-[var(--background)]">
     <TopMenu/>
     <Sidebar/>
 
-    <div className="px-5"> 
+    <div> 
     {children}
     </div>
     </main>
