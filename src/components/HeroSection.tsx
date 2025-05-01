@@ -10,8 +10,8 @@ export default function HeroSection() {
         <h1 className="text-5xl sm:text-6xl font-bold">Desconéctate del ruido, conéctate con la naturaleza.</h1>
         <p className="mt-4 text-lg sm:text-xl">Un refugio en medio de la selva amazónica, donde el río canta y el alma descansa.</p>
         <Link href="/reserva">
-          <button className="mt-6 px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold text-lg rounded-md transition-all">
-            Reserva tu experiencia
+        <button className="mt-6 px-6 py-3 bg-[var(--highlight)] hover:bg-[var(--primary)] text-white font-semibold text-lg rounded-md transition-all">           
+           Reserva tu experiencia
           </button>
         </Link>
       </div>

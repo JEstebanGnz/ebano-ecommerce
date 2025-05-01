@@ -3,13 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --primary: #3B6D39; /* Verde bosque */
-  --secondary: #A67C52; /* Marrón cálido */
-  --accent: #FFD700; /* Dorado suave */
-  --background: #F5F5F5; /* Fondo claro */
-  --text: #333333; /* Texto gris oscuro */
+  --primary: #5B4A3C; /* Marrón profundo, como el tronco del logo */
+  --secondary: #6D8E4E; /* Marrón cálido, ya lo tenías, funciona muy bien */
+  --accent: #D4A048; /* Dorado suave, como el sol del logo */
+  --background: #FAF7F2; /* Beige claro, imita el fondo del logo */
+  --surface: #F1EAE0; /* Color para tarjetas, secciones secundarias */
+  --text: #3C2F2F; /* Marrón oscuro, más suave que el negro */
+  --highlight: #6D8E4E; /* Verde oliva natural para detalles sutiles */
 }
-
 body {
   color: var(--text);
   background-color: var(--background);

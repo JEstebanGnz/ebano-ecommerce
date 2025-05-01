@@ -1,4 +1,4 @@
-import { Sidebar, TopMenu } from "@/components";
+import { TopMenu } from "@/components";
 
 export default function WebsiteLayout({
  children
@@ -7,10 +7,9 @@ export default function WebsiteLayout({
 }) {
 
   return (
-    <main className="min-h-screen bg-[var(--background)]">
+    <main className="bg-[var(--background)]">
     <TopMenu/>
-    <Sidebar/>
-
+    {/* <Sidebar/> */}
     <div> 
     {children}
     </div>
