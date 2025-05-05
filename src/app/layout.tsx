@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {titleFont} from '@/config/fonts'
 import "./globals.css";
+import TwoYearsCelebration from "@/components/TwoYearsCelebration";
 
 export const metadata: Metadata = {
   title: "Ébano: Experiencia Natural",
@@ -17,7 +18,8 @@ export default function RootLayout({
       <body
         className={`${titleFont.className}`}
       >
-        {children}
+        <TwoYearsCelebration />
+        {/* {children} */}
       </body>
     </html>
   );
